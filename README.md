@@ -47,23 +47,13 @@ where shrinkage estimators are used to reduce instability caused by multicolline
 
 Models are compared using:
 
-- Accuracy
-- Sensitivity
-- Specificity
-- Precision
-- F1-Score
-- Balanced Accuracy
-- ROC Curve
-- AUC
-- Log-Loss
-- Brier Score
+- Mean Square Error
 
 ---
 
 ## 🔬 Dataset Applications
 
 - Diabetes Dataset
-- Prostate Cancer Dataset
 - Simulated Multicollinear Data
 
 ---
@@ -88,29 +78,6 @@ caret
 
 ---
 
-## 📂 Project Structure
-
-```bash
-├── data/
-│   ├── diabetes.csv
-│   ├── prostate_cancer_data.xlsx
-│
-├── scripts/
-│   ├── estimators.R
-│   ├── simulation_study.R
-│   ├── model_comparison.R
-│   ├── evaluation_metrics.R
-│
-├── results/
-│   ├── accuracy_tables.csv
-│   ├── roc_curves.png
-│   ├── coefficient_comparison.csv
-│
-├── README.md
-```
-
----
-
 ## 📈 Key Findings
 
 - Ridge-based estimators improved prediction stability under multicollinearity.
@@ -119,19 +86,6 @@ caret
 - Shrinkage methods reduced variance while maintaining strong predictive performance.
 
 ---
-
-## ▶️ How to Run
-
-```r
-# Load dataset
-data <- read.csv("data/diabetes.csv")
-
-# Source estimator functions
-source("scripts/estimators.R")
-
-# Run model comparison
-source("scripts/model_comparison.R")
-```
 
 ---
 
